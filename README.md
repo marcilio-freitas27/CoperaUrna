@@ -1,5 +1,15 @@
 # Projeto CoperaUrna
 
+## Informações
+
+Desenvolvimento colaborativo de um desafio sugerido por um colega de curso/grupo. 
+O código será disponibilizado nas linguagens Python, C e Javascript.
+O intuito do projeto e para treinarmos os nossos conhecimentos no curso de Programador de Sistemas
+do IFRN Campos EAD - Natal Zona Leste. 
+Membros do grupo ativos até o momento: Marcílio Freitas, Junior, Pedro, Wilrique e Mateus.
+
+## Github
+
 ## Proposta
 
 Você devera desenvolver o sistema que será usado pela 
