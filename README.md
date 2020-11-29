@@ -46,4 +46,8 @@ Ou seja:
 
 Boa sorte e bom trabalho!
 
+## Exemplo
+
+Exemplo simples de como seria o projeto no flowgorithm
+
 ![imagem](https://github.com/marcilio-freitas27/CoperaUrna/blob/master/modelo-coperaurna.png)
