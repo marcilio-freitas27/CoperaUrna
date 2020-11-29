@@ -46,4 +46,4 @@ Ou seja:
 
 Boa sorte e bom trabalho!
 
-![imagem](F:\workspace\CoperaUrna\modelo-coperaurna.png)
+![imagem](https://github.com/marcilio-freitas27/CoperaUrna/blob/master/modelo-coperaurna.png)
