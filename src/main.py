@@ -16,6 +16,9 @@ can1 = 0
 can2 = 0
 can3 = 0
 
+# senha de confirmação
+sua_senha = input('Escolha sua senha: ')
+
 # Condição para escolha do candidato
 eleitor = 's'
 empate = 'n'
@@ -42,30 +45,35 @@ while eleitor == 's'.lower() or empate == 's'.lower():
     eleitor = 'n'
     
     # imprime o resultado
-
-    print('Candidato1: ',can1,'\nCandidato2: ',can2,'\nCandidato3: ',can3,'\nNulo: ',nulo,'\nBranco: ',branco,"\n")
+    while True:
+        senha = input('Digite a senha para finalizar: ')
+        if senha != sua_senha:
+            print("Senha invalida. Tente novamente.")
+        else:
+            print('Eleitores: ',votacao,'\nCandidato1: ',can1,'\nCandidato2: ',can2,'\nCandidato3: ',can3,'\nNulo: ',nulo,'\nBranco: ',branco,"\n")
+            break
 
     # resultado da votação
 
-    if can2 > can1 and can3 < can2 and nulo < can2 and branco < can2:
+    if can2 > can1 and can3 < can2:
         print(f"Fim da eleição, o vencedor foi o Candidato2 com {can2} votos")
         empate = 'n'
-    elif can3 > can1 and can2 < can3 and nulo < can3 and branco < can3:
+    elif can3 > can1 and can2 < can3:
         print(f"Fim da eleição, o vencedor foi o Candidato3 com {can3} votos")
         empate = 'n'
-    elif can1 > can2 and can3 < can1 and nulo < can1 and branco < can1:
+    elif can1 > can2 and can3 < can1:
         print(f"Fim da eleição, o vencedor foi o Candidato1 com {can1} votos")
-        empate = 'n'
-    elif nulo > can1 and can3 < nulo and can2 < nulo and branco < nulo:
-        print(f"Fim da eleição, o vencedor foi o Nulo com {nulo} votos")
-        empate = 'n'
-    elif branco > can1 and branco > can2 and branco > can3 and branco > nulo:
-        print(f"Fim da eleição, o vencedor foi o Branco com {branco} votos")
         empate = 'n'
 
     # empate
 
-    elif nulo == can1 or can3 == nulo or can2 == nulo or branco == nulo or can1 == can2 or can3 == can1 or branco == can1 or can3 == can2 or branco == can2 or branco == can3:
+    elif can1 == can2:
+        print("Houve empate! Preparem-se para o 2º turno!")
+        empate = 's'
+    elif can3 == can1 :
+        print("Houve empate! Preparem-se para o 2º turno!")
+        empate = 's'
+    elif can3 == can2:
         print("Houve empate! Preparem-se para o 2º turno!")
         empate = 's'
 
